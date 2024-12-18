@@ -1,0 +1,126 @@
+' Gambas class file
+
+' Copyright (C) 2004-2024 Murilo Gomes Julio
+' SPDX-License-Identifier: GPL-2.0-only
+
+' Mestre da Info
+' Site: https://www.mestredainfo.com.br
+
+Public Sub Form_Open()
+  
+  Dim sIdiomas As String 
+  
+  Try Mkdir "/tmp/mitranslate/"
+  
+  Shell "trans --list-all | awk '{print $1 \"-\" $2}'" Wait To sIdiomas
+  
+  Dim i As Integer = 0
+  For Each row As String In Split(sIdiomas, gb.NewLine)
+    If Not IsNull(row) Then 
+      cboIdioma.Add(row, i)
+      cboTraduzir.Add(row, i) 
+      Inc i
+    Endif 
+  Next
+  
+  cboIdioma.Text = Settings["idioma"]
+  cboTraduzir.Text = Settings["traduzir"]
+  
+End
+
+Public Sub cboIdioma_Change()
+  
+  Settings["idioma"] = cboIdioma.Text
+  Settings.Save()
+  
+End
+
+Public Sub cboTraduzir_Change()
+  
+  Settings["traduzir"] = cboTraduzir.Text
+  Settings.Save()
+  
+End
+
+Public Sub btnTraduzir_Click()
+  
+  Dim sTraducao As String 
+  Dim sIdioma As String = Split(cboIdioma.Text, "-")[0]
+  Dim sTraduzir As String = Split(cboTraduzir.Text, "-")[0]
+  
+  Shell Subst("trans -b &1:&2 \"&3\" -download-audio-as /tmp/mitranslate/audio.mp3", sIdioma, sTraduzir, txtTexto.Text) Wait To sTraducao
+  
+  txtTraducao.Text = sTraducao
+  
+End
+
+Public Sub cboIdioma_Click()
+  
+  cboIdioma_Change
+  
+End
+
+Public Sub cboTraduzir_Click()
+  
+  cboTraduzir_Change
+  
+End
+
+Public Sub btnOuvir_Click()
+  
+  If Exist("/tmp/mitranslate/audio.mp3") Then 
+    Sound.Load("/tmp/mitranslate/audio.mp3").Play()
+  Endif
+Catch 
+  Message.Error(("The text is too long, the audio could not be played!"))
+  
+End
+
+Public Sub Form_Close()
+  
+  If Exist("/tmp/mitranslate/audio.mp3") = True Then 
+    Try Kill "/tmp/mitranslate/audio.mp3"
+  Endif 
+  If Exist("/tmp/mitranslate/") = True Then 
+    Rmdir "/tmp/mitranslate/"
+  Endif 
+  
+End
+
+Public Sub mnuApoie_Click()
+  
+  Shell "xdg-open \"https://www.mestredainfo.com.br/p/apoie.html\""
+  
+End
+
+Public Sub mnuSobre_Click()
+  
+  FAbout.Show()
+  
+End
+
+Public Sub btnInverter_Click()
+  
+  Dim sIdioma As String = cboIdioma.Text
+  Dim sTraducao As String = cboTraduzir.Text
+  Dim tTexto As String = txtTexto.Text 
+  Dim tTraducao As String = txtTraducao.Text
+  
+  cboIdioma.Text = sTraducao
+  cboTraduzir.Text = sIdioma
+  
+  txtTexto.Text = tTraducao
+  txtTraducao.Text = tTexto
+End
+
+Public Sub btnDicionario_Click()
+  
+  Dim sTraducao As String 
+  Dim sIdioma As String = Split(cboIdioma.Text, "-")[0]
+  Dim sTraduzir As String = Split(cboTraduzir.Text, "-")[0]
+  
+  Shell Subst("trans &1:&2 -no-ansi -d \"&3\"", sIdioma, sTraduzir, txtTexto.Text) Wait To sTraducao
+  
+  txtTraducao.Text = sTraducao
+  
+End
