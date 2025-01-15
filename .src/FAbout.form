@@ -1,7 +1,7 @@
 # Gambas Form File 3.0
 
 { Form Form
-  MoveScaled(0,0,73,63)
+  MoveScaled(0,0,73,65)
   Font = Font["12"]
   Text = ("About MITranslate")
   Icon = Picture["mitranslate.png"]
@@ -14,7 +14,7 @@
     Text = "MITranslate"
   }
   { TextArea1 TextArea
-    MoveScaled(1,34,71,25)
+    MoveScaled(1,38,71,25)
     #Translate = False
     Text = "MITranslate is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, only version 2 of the License.\n\nMITranslate is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
     ReadOnly = True
@@ -22,33 +22,33 @@
     ScrollBar = Scroll.Vertical
   }
   { Label1 Label
-    MoveScaled(1,26,66,4)
+    MoveScaled(1,30,66,4)
     #Translate = False
     Alignment = Align.TopLeft
-    Text = "Copyright (C) 2004-2024 Murilo Gomes Julio"
+    Text = "Copyright (C) 2004-2025 Murilo Gomes Julio"
   }
   { Label3 Label
-    MoveScaled(1,15,66,4)
+    MoveScaled(1,19,66,4)
     Alignment = Align.TopLeft
     Text = ("Desenvolvido por: Murilo Gomes Julio")
   }
   { Label4 Label
-    MoveScaled(1,22,37,4)
+    MoveScaled(1,26,37,4)
     #Translate = False
     Text = "Site:"
   }
   { Label5 Label
-    MoveScaled(1,18.2857,32,4)
+    MoveScaled(1,22,32,4)
     #Translate = False
     Text = "Mestre da Info"
   }
   { URLLabel1 URLLabel
-    MoveScaled(6,22,42,4)
+    MoveScaled(6,26,42,4)
     #Translate = False
     Text = "www.mestredainfo.com.br"
   }
   { Label6 Label
-    MoveScaled(1,29,30,5)
+    MoveScaled(1,33,30,5)
     Text = ("Licença: GPL-2.0-only")
   }
   { Label7 Label
@@ -56,5 +56,9 @@
     #Translate = False
     Alignment = Align.TopLeft
     Text = "It is software for translating texts, listening to words and\nphrases and obtaining the meaning of words through the\nshell translator."
+  }
+  { lblVersion Label
+    MoveScaled(1,15,66,4)
+    Alignment = Align.TopLeft
   }
 }

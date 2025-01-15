@@ -2,26 +2,38 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: mitranslate 3.18.0\n"
-"PO-Revision-Date: 2024-08-26 15:50 UTC\n"
-"Last-Translator: Murilo Gomes Julio <contatomestredainfo@gmail.com>\n"
+"PO-Revision-Date: 2025-01-01 17:07 UTC\n"
+"Last-Translator: Mestre da Info <contatomestredainfo@gmail.com>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: FMain.form:27
+#: FMain.class:14
+msgid "<b>gawk</b> not found."
+msgstr "<b>gawk</b> não encontrado."
+
+#: FMain.class:19
+msgid "<b>translate-shell</b> not found."
+msgstr "<b>translate-shell</b> não encontrado."
+
+#: FMain.form:29
 msgid "About"
 msgstr "Sobre"
 
-#: FAbout.form:17 FMain.form:37
+#: FAbout.form:18 FMain.form:46
 msgid "About MITranslate"
 msgstr "Sobre MITranslate"
 
-#: FAbout.form:45
+#: FMain.form:32
+msgid "Check Update"
+msgstr "Verificar Atualização"
+
+#: FAbout.form:46
 msgid "Desenvolvido por: Murilo Gomes Julio"
 msgstr "Desenvolvido por: Murilo Gomes Julio"
 
-#: FMain.form:95
+#: FMain.form:104
 msgid "Dictionary"
 msgstr "Dicionário"
 
@@ -30,36 +42,40 @@ msgstr "Dicionário"
 msgid "It is software for translating texts, listening to words and phrases and getting the meaning of words through the translate-shell.\nThe MITranslate is under license GPL-2.0-only"
 msgstr ""
 
-#: FMain.form:68
+#: FMain.form:77
 msgid "Language:"
 msgstr "Idioma:"
 
-#: FAbout.form:65
+#: FAbout.form:66
 msgid "Licença: GPL-2.0-only"
 msgstr "Licença: GPL-2.0-only"
 
 # gb-ignore
-#: .project:1 FMain.form:22
+#: .project:1 FMain.form:24
 msgid "MITranslate"
 msgstr ""
 
-#: FMain.form:85
+#: FMain.form:94
 msgid "Play"
 msgstr "Reproduzir"
 
-#: FMain.form:30
+#: FMain.form:39
 msgid "Support MITranslate"
 msgstr "Apoie MITranslate"
 
-#: FMain.class:75
+#: FMain.class:85
 msgid "The text is too long, the audio could not be played!"
 msgstr "O texto é muito longo, não foi possível reproduzir o áudio!"
 
-#: FMain.form:49
+#: FMain.form:58
 msgid "Translate"
 msgstr "Traduzir"
 
-#: FMain.form:80
+#: FMain.form:89
 msgid "Translate to"
 msgstr "Traduzir para"
+
+#: FAbout.class:19
+msgid "Version:"
+msgstr "Versão:"
 
