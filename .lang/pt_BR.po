@@ -1,9 +1,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: mitranslate 3.18.0\n"
-"PO-Revision-Date: 2025-01-01 17:07 UTC\n"
-"Last-Translator: Mestre da Info <contatomestredainfo@gmail.com>\n"
+"Project-Id-Version: mitranslate 3.20.0\n"
+"PO-Revision-Date: 2025-01-19 20:29 UTC\n"
+"Last-Translator: Murilo Gomes Julio <contatomestredainfo@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -29,10 +29,6 @@ msgstr "Sobre MITranslate"
 msgid "Check Update"
 msgstr "Verificar Atualização"
 
-#: FAbout.form:46
-msgid "Desenvolvido por: Murilo Gomes Julio"
-msgstr "Desenvolvido por: Murilo Gomes Julio"
-
 #: FMain.form:104
 msgid "Dictionary"
 msgstr "Dicionário"
@@ -45,10 +41,6 @@ msgstr ""
 #: FMain.form:77
 msgid "Language:"
 msgstr "Idioma:"
-
-#: FAbout.form:66
-msgid "Licença: GPL-2.0-only"
-msgstr "Licença: GPL-2.0-only"
 
 # gb-ignore
 #: .project:1 FMain.form:24
@@ -75,7 +67,7 @@ msgstr "Traduzir"
 msgid "Translate to"
 msgstr "Traduzir para"
 
-#: FAbout.class:19
+#: FAbout.class:17
 msgid "Version:"
 msgstr "Versão:"
 

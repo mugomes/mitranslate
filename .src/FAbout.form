@@ -29,8 +29,9 @@
   }
   { Label3 Label
     MoveScaled(1,19,66,4)
+    #Translate = False
     Alignment = Align.TopLeft
-    Text = ("Desenvolvido por: Murilo Gomes Julio")
+    Text = "Developed by: Murilo Gomes Julio"
   }
   { Label4 Label
     MoveScaled(1,26,37,4)
@@ -49,7 +50,8 @@
   }
   { Label6 Label
     MoveScaled(1,33,30,5)
-    Text = ("Licença: GPL-2.0-only")
+    #Translate = False
+    Text = "License: GPL-2.0-only"
   }
   { Label7 Label
     MoveScaled(1,5,70,12)
@@ -59,6 +61,7 @@
   }
   { lblVersion Label
     MoveScaled(1,15,66,4)
+    #Translate = False
     Alignment = Align.TopLeft
   }
 }
