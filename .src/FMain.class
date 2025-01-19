@@ -82,7 +82,7 @@ Public Sub btnOuvir_Click()
     Sound.Load("/tmp/mitranslate/audio.mp3").Play()
   Endif
 Catch 
-  Message.Error(("The text is too long, the audio could not be played!"))
+  Message.Error(("The audio could not be played, the text may be too long or the selected language does not yet have audio."))
   
 End
 
