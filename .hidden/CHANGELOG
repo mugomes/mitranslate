@@ -1,3 +1,13 @@
+* Sun Jan 19 2025 Murilo Gomes Julio <contatomestredainfo@gmail.com> 1.0.6
+- Atualizado a string do comando trans
+- Adicionado abas no Sobre
+- Adicionado o módulo MLangs contendo vários idiomas
+- Alterado a inicialização do MITranslate para carregar os idiomas do módulo MLangs ao invés do comando trans
+
+* Sun Jan 19 2025 Murilo Gomes Julio <contatomestredainfo@gmail.com> 1.0.5
+- Alterado o texto de aviso de reprodução de áudio.
+- Removido a tradução do formulário Sobre.
+
 * Sun Jan 19 2025 Murilo Gomes Julio <contatomestredainfo@gmail.com> 1.0.4
 - Liberação inicial
 

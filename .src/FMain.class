@@ -8,21 +8,9 @@
 
 Public Sub Form_Open()
   
-  Dim sIdiomas As String 
-  
-  If Exist("/usr/bin/gawk") = False Then 
-    Message.Error(("<b>gawk</b> not found."))
-    Quit
-  Endif
-  
-  If Exist("/usr/bin/trans") = False Then
-    Message.Error(("<b>translate-shell</b> not found."))
-    Quit
-  Endif
+  Dim sIdiomas As String = MLangs.get()
   
   Try Mkdir "/tmp/mitranslate/"
-  
-  Shell "trans --list-all | awk '{print $1 \"-\" $2}'" Wait To sIdiomas
   
   Dim i As Integer = 0
   For Each row As String In Split(sIdiomas, gb.NewLine)
@@ -58,7 +46,7 @@ Public Sub btnTraduzir_Click()
   Dim sIdioma As String = Split(cboIdioma.Text, "-")[0]
   Dim sTraduzir As String = Split(cboTraduzir.Text, "-")[0]
   
-  Shell Subst("trans -b &1:&2 \"&3\" -download-audio-as /tmp/mitranslate/audio.mp3", sIdioma, sTraduzir, txtTexto.Text) Wait To sTraducao
+  Shell Subst("$APPDIR/usr/bin/trans -b &1:&2 \"&3\" -download-audio-as /tmp/mitranslate/audio.mp3", sIdioma, sTraduzir, txtTexto.Text) Wait To sTraducao
   
   txtTraducao.Text = sTraducao
   
@@ -129,7 +117,7 @@ Public Sub btnDicionario_Click()
   Dim sIdioma As String = Split(cboIdioma.Text, "-")[0]
   Dim sTraduzir As String = Split(cboTraduzir.Text, "-")[0]
   
-  Shell Subst("trans &1:&2 -no-ansi -d \"&3\"", sIdioma, sTraduzir, txtTexto.Text) Wait To sTraducao
+  Shell Subst("$APPDIR/usr/bin/trans &1:&2 -no-ansi -d \"&3\"", sIdioma, sTraduzir, txtTexto.Text) Wait To sTraducao
   
   txtTraducao.Text = sTraducao
   
