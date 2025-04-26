@@ -13,8 +13,8 @@
     }
     { Menu2 Menu
     }
-    { mnuApoie Menu
-      Text = ("Support MITranslate")
+    { mnuSuporte Menu
+      Text = ("Technical Support")
     }
     { Menu5 Menu
     }
@@ -58,10 +58,6 @@
     MoveScaled(55,1,30,5)
     Font = Font["Bold"]
     Text = ("Translate to")
-  }
-  { btnOuvir Button
-    MoveScaled(84,45,18,5)
-    Text = ("Play")
   }
   { btnInverter Button
     MoveScaled(49,6,5,5)
