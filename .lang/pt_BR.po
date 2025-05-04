@@ -1,8 +1,8 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: mitranslate 3.20.1\n"
-"PO-Revision-Date: 2025-02-23 13:27 UTC\n"
+"Project-Id-Version: mitranslate 3.20.3\n"
+"PO-Revision-Date: 2025-05-04 20:56 UTC\n"
 "Last-Translator: Murilo Gomes Julio <contatomestredainfo@gmail.com>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -40,8 +40,8 @@ msgid "MITranslate"
 msgstr ""
 
 #: FMain.form:38
-msgid "Technical Support"
-msgstr "Suporte Técnico"
+msgid "Support MITranslate"
+msgstr "Apoie MITranslate"
 
 #: FAbout.form:82
 msgid "Third Party Software Credits"

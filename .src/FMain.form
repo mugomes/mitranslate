@@ -14,7 +14,7 @@
     { Menu2 Menu
     }
     { mnuSuporte Menu
-      Text = ("Technical Support")
+      Text = ("Support MITranslate")
     }
     { Menu5 Menu
     }

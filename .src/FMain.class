@@ -105,6 +105,6 @@ End
 
 Public Sub mnuSuporte_Click()
 
-  Shell "xdg-open \"https://www.mestredainfo.com.br/p/contato.html#apoie\""
+  Shell "xdg-open \"https://www.mestredainfo.com.br/p/apoie.html\""
 
 End
