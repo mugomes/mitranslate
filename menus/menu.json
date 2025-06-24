@@ -1,0 +1,20 @@
+{
+    "Sobre":
+    {
+        "Verificar Atualização": {
+          "url": "https://mipremium.mestredainfo.com.br/2025/05/micheckhash.html"
+        },
+        "separator1": {},
+        "Seja um assinante": {
+            "url": "https://www.mestredainfo.com.br"
+        },
+        "separator2": {},
+        "Sobre MICheckHash": {
+            "page": "sobre.html",
+            "newwindow": true,
+            "width": 600,
+            "height": 400,
+            "resizable": false
+        }
+    }
+}

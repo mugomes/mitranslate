@@ -4,7 +4,7 @@ It is software for translating texts, listening to words and phrases and getting
 
 ## Information
 
-- [Page MITranslate](https://www.mestredainfo.com.br/p/mitranslate.html)
+- [Page MITranslate](https://www.mestredainfo.com.br)
 
 ## License
 
