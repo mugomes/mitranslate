@@ -1,0 +1,79 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,75,73)
+  Font = Font["12"]
+  Text = ("About MiTranslate")
+  Icon = Picture["mitranslate.png"]
+  Resizable = False
+  { TabStrip1 TabPanel
+    MoveScaled(1,1,73,70)
+    Count = 2
+    TextFont = Font["Bold"]
+    Index = 0
+    Text = ("MiTranslate")
+    { Label7 Label
+      MoveScaled(1,2,70,10)
+      #Translate = False
+      Alignment = Align.TopLeft
+      Text = "It is software for translating texts, listening to words and\nphrases and obtaining the meaning of words through the\nshell translator."
+    }
+    { lblVersion Label
+      MoveScaled(1,11,66,4)
+      #Translate = False
+      Alignment = Align.TopLeft
+    }
+    { Label3 Label
+      MoveScaled(1,15,66,4)
+      #Translate = False
+      Alignment = Align.TopLeft
+      Text = "Developed by: Murilo Gomes Julio"
+    }
+    { Label4 Label
+      MoveScaled(1,17.75,37,4)
+      #Translate = False
+      Text = "Site:"
+    }
+    { Label1 Label
+      MoveScaled(1.25,22.125,66,4)
+      #Translate = False
+      Alignment = Align.TopLeft
+      Text = "Copyright (C) 2025 Murilo Gomes Julio"
+    }
+    { Label6 Label
+      MoveScaled(1.25,24.5,30,5)
+      #Translate = False
+      Text = "License: GPL-2.0-only"
+    }
+    { TextArea1 TextArea
+      MoveScaled(1,29.125,71,27)
+      #Translate = False
+      Text = "MiTranslate is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, only version 2 of the License.\n\nMiTranslate is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details."
+      ReadOnly = True
+      Wrap = True
+      ScrollBar = Scroll.Vertical
+    }
+    { URLLabel1 URLLabel
+      MoveScaled(6,17.75,42,4)
+      #Translate = False
+      Text = "www.mugomes.com.br"
+    }
+    Index = 1
+    Text = ("Third Party Software Credits")
+    { TabStrip2 TabPanel
+      MoveScaled(1,1,70,63)
+      Count = 1
+      TextFont = Font["Bold"]
+      Index = 0
+      Text = ("translate-shell")
+      { TextArea2 TextArea
+        MoveScaled(1,1,68,57)
+        #Translate = False
+        Text = "Site: https://github.com/soimort/translate-shell/\n\nLicense:\n\nThis is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <http://unlicense.org/>\n"
+        Wrap = True
+      }
+      Index = 0
+    }
+    Index = 0
+  }
+}

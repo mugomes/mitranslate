@@ -1,0 +1,71 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,104,56)
+  Font = Font["12"]
+  Text = ("MiTranslate")
+  Icon = Picture["mitranslate.png"]
+  Resizable = False
+  { Menu3 Menu
+    Text = ("About")
+    { mnuCheckUpdate Menu
+      Text = ("Check Update")
+    }
+    { Menu2 Menu
+    }
+    { mnuSuporte Menu
+      Text = ("Subscribers")
+    }
+    { Menu5 Menu
+    }
+    { mnuSobre Menu
+      Text = ("About MiTranslate")
+    }
+  }
+  { txtTexto TextArea
+    MoveScaled(1,12,50,31)
+    #Translate = False
+    Font = Font["12"]
+    Wrap = True
+  }
+  { btnTraduzir Button
+    MoveScaled(33,45,18,5)
+    Text = ("Translate")
+  }
+  { txtTraducao TextArea
+    MoveScaled(52,12,50,31)
+    #Translate = False
+    Font = Font["12"]
+    ReadOnly = True
+    Wrap = True
+  }
+  { cboIdioma ComboBox
+    MoveScaled(1,6,47,5)
+    ReadOnly = True
+    Sorted = True
+  }
+  { Label1 Label
+    MoveScaled(1,1,33,5)
+    Font = Font["Bold"]
+    Text = ("Language:")
+  }
+  { cboTraduzir ComboBox
+    MoveScaled(55,6,47,5)
+    ReadOnly = True
+    Sorted = True
+  }
+  { Label2 Label
+    MoveScaled(55,1,30,5)
+    Font = Font["Bold"]
+    Text = ("Translate to")
+  }
+  { btnInverter Button
+    MoveScaled(49,6,5,5)
+    #Translate = False
+    Text = "< >"
+  }
+  { btnDicionario Button
+    MoveScaled(52,45,18,5)
+    Text = ("Dictionary")
+  }
+}
