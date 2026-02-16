@@ -25,9 +25,12 @@ const VERSION_APP string = "3.0.0"
 
 func main() {
 	c.LoadTranslations()
+
+	sIcon := fyne.NewStaticResource("mitranslate.png", resourceAppIconPngData)
 	
 	app := app.NewWithID("br.com.mugomes.mitranslate")
 	app.Settings().SetTheme(&myDarkTheme{})
+	app.SetIcon(sIcon)
 
 	window := app.NewWindow("MiTranslate")
 	window.SetFixedSize(true)
