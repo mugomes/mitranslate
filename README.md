@@ -4,18 +4,14 @@ It is software for translating texts, listening to words and phrases and getting
 
 ## Information
 
- - [Page MiTranslate](https://github.com/mugomes/mitranslate)
+- [Page MiTranslate](https://github.com/mugomes/mitranslate)
 
 ## System Requirement
 
 ### Linux
 
- - Ubuntu 24.04 or higher
- - Graphics: GPU with OpenGL support (required for 3D acceleration)
-
-### Windows
-
-- Windows 10 or higher
+- Ubuntu 24.04 or higher
+- Depends: translate-shell
 - Graphics: GPU with OpenGL support (required for 3D acceleration)
 
 ## License
